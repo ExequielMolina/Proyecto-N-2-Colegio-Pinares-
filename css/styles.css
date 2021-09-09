@@ -4,6 +4,74 @@
   box-sizing: border-box;
 }
 
+#card-title {
+  text-decoration: none;
+  color: #2e4d6b;
+}
+
+#card-title:hover {
+  color: #477250;
+}
+
+#card-text{
+  font-style: italic;
+}
+/*------- Titulos secciones -------*/
+
+#sectionTitle{
+  color: #2e4d6b;
+}
+
+@media (min-width: 320px) {
+  #sectionTitle{
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 375px) {
+  #sectionTitle{
+    margin-left: 4%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 768px) {
+  #sectionTitle{
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+  #sectionTitle{
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1440px) {
+  #sectionTitle{
+    margin-left: 0.9%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    font-size: 35px;
+    font-weight: 700;
+  }
+}
+
 /*------- Footer -------*/
 
 #footerText,
