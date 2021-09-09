@@ -309,3 +309,39 @@
     margin-top: 3%;
   }
 }
+
+/*------- Noticias -------*/
+
+
+  #institutionalTitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: #477250; 
+    margin-bottom: 0%;
+  }
+   
+   #institutionalCardTitle{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 750;
+    color: #2e4d6b; 
+    margin-bottom: 2%;
+   }
+   
+   #institutionalSubTitle{
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(58, 57, 57); 
+    font-style: italic;
+    margin-bottom: 0%;
+   }
+   
+   #institutionalContent{
+    font-size: 15px;
+    font-weight: 600;
+    color:rgb(58, 57, 57); 
+    margin-top: 3%;
+    text-align: left;
+    
+   }
+  
