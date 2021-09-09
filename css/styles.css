@@ -215,3 +215,29 @@
     width: 10%;
   }
 }
+
+/*-------- Carousel --------*/
+
+@media (min-width: 320px) {
+#homeCarousel{
+  margin-top: 5%;
+}
+}
+
+@media (min-width: 425px) {
+  #homeCarousel{
+    margin-top: 7%;
+  }
+}
+
+@media (min-width: 768px) {
+  #homeCarousel{
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 1024px) {
+  #homeCarousel{
+    margin-top: 3%;
+  }
+}
