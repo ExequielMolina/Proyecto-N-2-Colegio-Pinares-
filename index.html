@@ -202,6 +202,65 @@
     </div>
   </div>
   <!-- End Card Group Noticias -->
+
+<!-- StartContactForm -->
+<h1> Contacto Colegio Pinares Tucumán </h1>
+<div class="">
+  <form class="form" id="contactForm" name="contactForm">
+    <div class=" ms-3 mb-1 mt-3 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
+      <label for="name" class="form-label"></label>
+      <input type="text" class="form-control" id="contactName" minlength="5" maxlength="40" placeholder="Apellidos y Nombres"
+        aria-describedby="name" required>
+      <div id="contactName" class="form-text"></div>
+    </div>
+    <div class="ms-3 mb-1 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
+      <label for="contactEmail" class="form-label"></label>
+      <input type="email" class="form-control" id="contactEmail" minlength="5" maxlength="40" placeholder="Correo Electrónico"
+        aria-describedby="emailHelp" required>
+      <div id="contactEmail" name="name" class="form-text"></div>
+    </div>
+    <div class=" ms-3 mb-1 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
+      <label for="contactPhone" class="form-label"></label>
+      <input type="tel" class="form-control" id="contactPhone" minlength="10" maxlength="40" placeholder="Teléfono" name="contactPhone"
+        required>
+    </div>
+    <div class=" ms-3 mb-1 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
+      <label for="exampleFormControlTextarea1" class="form-label"></label>
+      <textarea class="form-control" id="texAreaContact" name="textAreaContact" minlength="" maxlength="500" required
+        placeholder="Escriba su consulta aquí..." rows="3"></textarea>
+    </div>
+    <button class="  mb-3 p-2" type="submit" id="enviarButton" name="enviarButton" data-bs-toggle="modal"
+      data-bs-target="#contactModal">
+      <a style="text-decoration: none;">ENVIAR</a>
+  </form>
+</div>
+
+<!-- EndContactForm -->
+
+<div class="modal fade rounded-3" id="contactModal" name="contactModal" tabindex="1"
+  aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark p-2">
+        <img src="img/logo-navbar.png" class="image-fluid ms-1" style="width: 25%;">
+        <h5 class="modal-title text-white ms-3" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-weight: 500; font-style: italic; justify-content:left;">
+        <p class="mb-0">Su consulta fue enviada con éxito. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+          class="bm-0 border-0 py-1 btn btn-success btn-block rounded-1 text-white text-uppercase  mt-1"
+          style="background-color:#2e4d6b; font-weight: 500; text-shadow: 0.2px 0.2px 0.ch black;"
+          data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
         </header>    
     </main>
 
