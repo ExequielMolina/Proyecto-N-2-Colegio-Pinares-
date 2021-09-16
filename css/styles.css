@@ -72,6 +72,43 @@
   }
 }
 
+h1{
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
+  color: #2e4d6b;
+  
+}
+
+#contactForm {
+   background: linear-gradient(to bottom right, blue, pink);
+   background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/l/t1.6435-9/116840024_1531393177044473_488071329106423481_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a26aad&_nc_ohc=Y4hiomfNtwoAX_E9Nw3&_nc_ht=scontent.ftuc1-2.fna&oh=996668f331643827af26c6466387c132&oe=61603F3B");
+   background-attachment: fixed; 
+   background-repeat: no-repeat;
+   max-block-size: 200%;
+   
+       
+   
+}
+
+#enviarButton   {
+  
+  
+  background-color: #2e4d6b;
+  color: white;
+  font-weight: 500;
+  border-style: solid 5px;
+  margin-top:10px;
+  color:white;
+  border-radius: 50px;
+  margin: 15px;
+  padding-left: 10px;
+  
+  
+ 
+}
+
 /*------- Footer -------*/
 
 #footerText,
