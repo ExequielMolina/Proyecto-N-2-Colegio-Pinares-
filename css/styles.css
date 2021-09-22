@@ -82,11 +82,15 @@ h1{
 }
 
 #contactForm {
-   background: linear-gradient(to bottom right, blue, pink);
-   background: url("https://scontent.ftuc1-2.fna.fbcdn.net/v/l/t1.6435-9/116840024_1531393177044473_488071329106423481_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=a26aad&_nc_ohc=Y4hiomfNtwoAX_E9Nw3&_nc_ht=scontent.ftuc1-2.fna&oh=996668f331643827af26c6466387c132&oe=61603F3B");
+   
+   background:url("https://www.flacsi.net/wp-content/uploads/2012/01/Vista-frontal-bloque-secundaria-scaled.jpg");
    background-attachment: fixed; 
    background-repeat: no-repeat;
-   max-block-size: 200%;
+   position: relative;
+   background-size: cover;
+   background-position: center center;
+   
+   
    
        
    
