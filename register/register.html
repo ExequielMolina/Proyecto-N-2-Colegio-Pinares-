@@ -1,141 +1,109 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/logo.png" />
-    <script src="register.js" defer></script>
+<link rel="shortcut icon" href="../img/logo.png" />
+<script src="register.js" defer></script>
     <script src="../index.js" defer></script>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!--titulo-->
-    <title>Registrarse en Colegio Pinares</title>
-  </head>
-  <body>
-    <!--contenedor formulario-->
-    <div
-      class="
-        divFormulario
-        container
-        border border-dark
-        mt-5
-        mb-5
-        border border-1
-        rounded
-      "
-    >
-      <h1 class="display-4 d-flex justify-content-center">Registrarme</h1>
+    <title>Regístrate en Colegio Pinares Tucumán</title>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
 
-      <form action="" id="form">
-        <!-- input name-->
-        <div class="mb-3">
-          <label class="h5" for="nombre" class="form-label">Nombre/s</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            class="form-control"
-            placeholder="Ingrese su nombre"
-            maxlength="50"
-          />
-        </div>
-        <!--input apellido-->
-        <div class="mb-3">
-          <label class="h5" for="Apellido" class="form-label">Apellido/s</label>
-          <input
-            id="lastName"
-            name="lastName"
-            type="text"
-            class="form-control"
-            placeholder="Ingrese su Apellido"
-          />
-        </div>
-        <!--input Area-->
-        <div class="mb-3">
-          <label class="h5" for="Area" class="form-label">Area de trabajo</label>
-          <select
-            id="area"
-            name="area"
-            class="form-select"
-            class="form-control"
-          >
-            <option disabled>Selecione una opción</option>
-            <option value="docente">Docente</option>
-            <option selected value="noDocente">No docente</option>
-          </select>
-        </div>
-        <!--input cargo-->
-        <div class="mb-3">
-          <label class="h5" for="Cargo" class="form-label">Cargo que ocupa</label>
-          <input
-            id="position"
-            name="position"
-            type="text"
-            class="form-control"
-            placeholder="Ingrese el cargo "
-          />
-        </div>
-        <!--input email-->
-        <div class="mb-3">
-          <label class="h5" for="email" class="form-label">Email</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            class="form-control"
-            placeholder="Ingrese su dirección de email"
-            aria-describedby="emailHelp"
-          />
-          <div id="emailHelp" class="form-text">
-            No compartiremos tu email con nadie
-          </div>
-        </div>
-        <!--nombre de usuario-->
-        <div class="mb-3">
-          <label class="h5" for="nameUser" class="form-label"
-            >Nombre de Usuario</label
-          >
-          <input
-            id="userName"
-            name="userName"
-            type="text"
-            class="form-control"
-            placeholder="Ingrese un nombre de usuario"
-          />
-        </div>
-        <!--password-->
-        <div class="mb-3">
-          <label class="h5" for="password" class="form-label">Contraseña</label>
-          <input
-            id="password"
-            name="password"
-            type="password"
-            class="form-control"
-            placeholder="ingrese su contraseña"
-          />
-        </div>
-      </form>
-      <!--boton de enviar-->
-      <div class="mb-3">
-        <button class="btn btn-primary btn-lg" onclick="registerUsers()">
-          Regístrame
-        </button>
-        <!--boton de cancelar-->
-        <button type="button" class="btn btn-danger btn-lg">Cancelar</button>
-        <p class="alerta d-flex justify-content-center h5" id="alerta"></p>
-      </div>
-    </div>
+<body id="formBody">
+	<div class="container h-100">
+		<div class="d-flex justify-content-center h-100">
+			<div class="userRegisterCard">
+				<div class="d-flex justify-content-center">
+					<div class="registerLogoContainer">
+						<img src="../img/logoLogin.png" class="registerLogo" alt="Logo">
+					</div>
+				</div>
+				<div class="d-flex justify-content-center formContainer">
+					<form>
+            <h1 class=" mt-0" id="registerFormTitle" name="registerFormTitle">COMPLETA PARA REGISTRATE</h1>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+              <input type="text" id= "name" name="name" class="form-control input_user" placeholder="Ingrese su nombre" required>
+						</div>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" id= "lastName" name="lastName" class="form-control input_user" placeholder="Ingrese su apellido" required>
+						</div>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+              <select
+              id="area"
+              name="area"
+              class="form-control input_user"
+              required
+            >
+              <option selected disabled> Seleccione área de trabajo</option>
+              <option>Docente</option>
+              <option>No Docente</option>
+            </select>
+						</div>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+              <select
+              id="position"
+              name="position"
+              class="form-control input_user"
+              required
+            >
+              <option selected disabled>Seleccione cargo que ocupa</option>
+              <option>Profesor titular</option>
+              <option>Profesor suplente</option>
+              <option>Personal de limpieza</option>
+              <option>Administración</option>
+            </select>
+						</div>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="email" id= "email" name="email" class="form-control input_user" placeholder="Ingrese su e-mail" required>
+						</div>
+						<div class="input-group mb-3">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" id= "userName" name="userName" class="form-control input_user" placeholder="Ingrese su nombre de usuario" required>
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" id= "password" name="password" class="form-control input_pass" value="" placeholder="Ingrese su contraseña" required>
+						</div>
+						<div class="form-group">
+						</div>
+							<div class="d-flex justify-content-center mt-3 registerContainer">
+				 	<button  id="loginButton" name="loginButton" onclick="registerUsers()"><a>REGÍSTRATE</a></button>
+				   </div>
+					</form>
+				</div>
+		
+				<div class="mt-2">
+					<div class="d-flex justify-content-center links">
+						¿Ya tienes cuenta? <a href="../login/login.html" class="ml-2">Inicia sesión</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+</body>
 </html>

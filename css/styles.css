@@ -72,45 +72,33 @@
   }
 }
 
-h1{
+h1 {
   margin-top: 5px;
   font-size: 18px;
   font-weight: bold;
   margin: 20px;
   color: #2e4d6b;
-  
 }
 
 #contactForm {
-   
-   background:url("https://www.flacsi.net/wp-content/uploads/2012/01/Vista-frontal-bloque-secundaria-scaled.jpg");
-   background-attachment: fixed; 
-   background-repeat: no-repeat;
-   position: relative;
-   background-size: cover;
-   background-position: center center;
-   
-   
-   
-       
-   
+  background: url("https://www.flacsi.net/wp-content/uploads/2012/01/Vista-frontal-bloque-secundaria-scaled.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
 }
 
-#enviarButton   {
-  
-  
+#enviarButton {
   background-color: #2e4d6b;
   color: white;
   font-weight: 500;
   border-style: solid 5px;
-  margin-top:10px;
-  color:white;
+  margin-top: 10px;
+  color: white;
   border-radius: 50px;
   margin: 15px;
   padding-left: 10px;
-  
-  
- 
 }
 
 /*------- Footer -------*/
@@ -441,15 +429,53 @@ h1{
   }
 }
 
-/*------- Login ------- */
-
-#loginBody {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-image: url("../img/background.jpg");
-  background-size: cover;
+/*------- Register ------- */
+.userRegisterCard {
+  height: 620px;
+  width: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #2e4d6ba1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 25px;
+  font-weight: 400;
+  color: white;
 }
+.registerLogoContainer {
+  position: absolute;
+  height: 160px;
+  width: 160px;
+  top: -60px;
+  border-radius: 50%;
+  background: #477250c9;
+  padding: 10px;
+  text-align: center;
+}
+.registerLogo {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.formContainer {
+  margin-top: 100px;
+}
+
+.registerContainer {
+  padding: 0 2rem;
+}
+
+
+/*------- Login ------- */
 
 .userLoginCard {
   height: 400px;
@@ -494,6 +520,17 @@ h1{
 .loginContainer {
   padding: 0 2rem;
 }
+
+/*------- Comunes entre login y register -------*/
+
+#formBody {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+
 .input-group-text {
   background: #477250 !important;
   color: white !important;
@@ -518,4 +555,9 @@ h1{
 #loginButton a {
   color: white;
   font-weight: 500;
+}
+
+#registerFormTitle {
+  color: white;
+  text-shadow: black;
 }

@@ -17,22 +17,23 @@ else{
   let userName = document.getElementById('userName').value;
   let password = document.getElementById('password').value;
 
-  let newUser = new User(name, lastName, position, area, email,userName, password);
-  registeredUsers.push(newUser);
-  localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers))
-}
+  if(name !== '' && lastName !== '' && area !== '' && position !== '' && email !==  && userName !== '' && password !== ''){
 
-// function clearLocalStorage() {
-//   localStorage.clear();
-//   usuarios = []
-// }
-// /* let form = document.getElementById('form');*/
-// const nombre = document.getElementById('nombre');
-// const apellido = document.getElementById('apellido');
-// const cargo = document.getElementById('cargo');
+    let newUser = new User(name, lastName, position, area, email,userName, password);
+    registeredUsers.push(newUser);
+    localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers))
+  }
+
+}
+/* ---------------------------------------------- */
+
+/* let form = document.getElementById('form');*/
+// const nombre = document.getElementById('name');
+// const apellido = document.getElementById('lastName');
 // const area = document.getElementById('area');
+// const cargo = document.getElementById('position');
 // const email = document.getElementById('email');
-// const nameUser = document.getElementById('nameUser');
+// const nameUser = document.getElementById('userName');
 // const password = document.getElementById('password');
 // const form = document.getElementById('form');
 // const parrafo = document.getElementById('alerta');
@@ -48,6 +49,7 @@ else{
 //   let expresionUsuario = /^[a-zA-Z0-9\_\-]{4,16}$/;
 //   let expresionPass = /^.{4,12}$/;
 //   parrafo.innerHTML = '';
+
 //   if (
 //     nombre.value === '' ||
 //     apellido.value === '' ||
