@@ -17,7 +17,7 @@ else{
   let userName = document.getElementById('userName').value;
   let password = document.getElementById('password').value;
 
-  if(name !== '' && lastName !== '' && area !== '' && position !== '' && email !==  && userName !== '' && password !== ''){
+  if(name !== '' && lastName !== '' && area !== '' && position !== '' && email !== '' && userName !== '' && password !== ''){
 
     let newUser = new User(name, lastName, position, area, email,userName, password);
     registeredUsers.push(newUser);

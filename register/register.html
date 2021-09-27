@@ -1,109 +1,170 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="shortcut icon" href="../img/logo.png" />
-<script src="register.js" defer></script>
+  <head>
+    <link rel="shortcut icon" href="../img/logo.png" />
+    <script src="register.js" defer></script>
     <script src="../index.js" defer></script>
     <title>Regístrate en Colegio Pinares Tucumán</title>
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="../css/styles.css" />
-</head>
+  </head>
 
-<body id="formBody">
-	<div class="container h-100">
-		<div class="d-flex justify-content-center h-100">
-			<div class="userRegisterCard">
-				<div class="d-flex justify-content-center">
-					<div class="registerLogoContainer">
-						<img src="../img/logoLogin.png" class="registerLogo" alt="Logo">
-					</div>
-				</div>
-				<div class="d-flex justify-content-center formContainer">
-					<form>
-            <h1 class=" mt-0" id="registerFormTitle" name="registerFormTitle">COMPLETA PARA REGISTRATE</h1>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-              <input type="text" id= "name" name="name" class="form-control input_user" placeholder="Ingrese su nombre" required>
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-							<input type="text" id= "lastName" name="lastName" class="form-control input_user" placeholder="Ingrese su apellido" required>
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-              <select
-              id="area"
-              name="area"
-              class="form-control input_user"
-              required
-            >
-              <option selected disabled> Seleccione área de trabajo</option>
-              <option>Docente</option>
-              <option>No Docente</option>
-            </select>
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-              <select
-              id="position"
-              name="position"
-              class="form-control input_user"
-              required
-            >
-              <option selected disabled>Seleccione cargo que ocupa</option>
-              <option>Profesor titular</option>
-              <option>Profesor suplente</option>
-              <option>Personal de limpieza</option>
-              <option>Administración</option>
-            </select>
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-							<input type="email" id= "email" name="email" class="form-control input_user" placeholder="Ingrese su e-mail" required>
-						</div>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-							<input type="text" id= "userName" name="userName" class="form-control input_user" placeholder="Ingrese su nombre de usuario" required>
-						</div>
-						<div class="input-group mb-2">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-key"></i></span>
-							</div>
-							<input type="password" id= "password" name="password" class="form-control input_pass" value="" placeholder="Ingrese su contraseña" required>
-						</div>
-						<div class="form-group">
-						</div>
-							<div class="d-flex justify-content-center mt-3 registerContainer">
-				 	<button  id="loginButton" name="loginButton" onclick="registerUsers()"><a>REGÍSTRATE</a></button>
-				   </div>
-					</form>
-				</div>
-		
-				<div class="mt-2">
-					<div class="d-flex justify-content-center links">
-						¿Ya tienes cuenta? <a href="../login/login.html" class="ml-2">Inicia sesión</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <body id="formBody">
+    <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="userRegisterCard">
+          <div class="d-flex justify-content-center">
+            <div class="registerLogoContainer">
+              <img src="../img/logoLogin.png" class="registerLogo" alt="Logo" />
+            </div>
+          </div>
+          <div class="d-flex justify-content-center formContainer">
+            <form>
+              <h1 class="mt-0" id="registerFormTitle" name="registerFormTitle">
+                COMPLETA PARA REGISTRATE
+              </h1>
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control input_user"
+                  placeholder="Ingrese su nombre"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  class="form-control input_user"
+                  placeholder="Ingrese su apellido"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <select
+                  id="area"
+                  name="area"
+                  class="form-control input_user"
+                  required
+                >
+                  <option selected disabled>Seleccione área de trabajo</option>
+                  <option>Docente</option>
+                  <option>No Docente</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <select
+                  id="position"
+                  name="position"
+                  class="form-control input_user"
+                  required
+                >
+                  <option selected disabled>Seleccione cargo que ocupa</option>
+                  <option>Profesor titular</option>
+                  <option>Profesor suplente</option>
+                  <option>Personal de limpieza</option>
+                  <option>Administración</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control input_user"
+                  placeholder="Ingrese su e-mail"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fas fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  id="userName"
+                  name="userName"
+                  class="form-control input_user"
+                  placeholder="Ingrese su nombre de usuario"
+                  required
+                />
+              </div>
+              <div class="input-group mb-2">
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fas fa-key"></i
+                  ></span>
+                </div>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-control input_pass"
+                  value=""
+                  placeholder="Ingrese su contraseña"
+                  required
+                />
+              </div>
+              <div class="form-group"></div>
+              <div class="d-flex justify-content-center mt-3 registerContainer">
+                <button
+                  id="loginButton"
+                  name="loginButton"
+                  onclick="registerUsers()"
+                >
+                  <a>REGÍSTRATE</a>
+                </button>
+              </div>
+            </form>
+          </div>
 
-</body>
+          <div class="mt-2">
+            <div class="d-flex justify-content-center links">
+              ¿Ya tienes cuenta?
+              <a href="../login/login.html" class="ml-2">Inicia sesión</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
