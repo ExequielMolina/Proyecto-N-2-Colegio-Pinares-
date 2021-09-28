@@ -48,6 +48,7 @@
                   class="form-control input_user"
                   placeholder="Ingrese su nombre"
                   required
+                  maxlength="12"
                 />
               </div>
               <div class="input-group mb-3">
@@ -63,6 +64,7 @@
                   class="form-control input_user"
                   placeholder="Ingrese su apellido"
                   required
+                  maxlength="12"
                 />
               </div>
               <div class="input-group mb-3">
@@ -77,9 +79,9 @@
                   class="form-control input_user"
                   required
                 >
-                  <option selected disabled>Seleccione área de trabajo</option>
-                  <option>Docente</option>
-                  <option>No Docente</option>
+                  <option value="">Seleccione área de trabajo</option>
+                  <option value="Docente">Docente</option>
+                  <option value="No Docente">No Docente</option>
                 </select>
               </div>
               <div class="input-group mb-3">
@@ -94,11 +96,11 @@
                   class="form-control input_user"
                   required
                 >
-                  <option selected disabled>Seleccione cargo que ocupa</option>
-                  <option>Profesor titular</option>
-                  <option>Profesor suplente</option>
-                  <option>Personal de limpieza</option>
-                  <option>Administración</option>
+                  <option value="">Seleccione cargo que ocupa</option>
+                  <option value="Profesor titular">Profesor titular</option>
+                  <option value="Profesor suplente">Profesor suplente</option>
+                  <option value="Personal de limpieza">Personal de limpieza</option>
+                  <option value="Administración">Administración</option>
                 </select>
               </div>
               <div class="input-group mb-3">
@@ -129,6 +131,9 @@
                   class="form-control input_user"
                   placeholder="Ingrese su nombre de usuario"
                   required
+                  minlength="8"
+                  maxlength="12"
+                  pattern="[A-Za-z0-9]+"
                 />
               </div>
               <div class="input-group mb-2">
@@ -145,10 +150,13 @@
                   value=""
                   placeholder="Ingrese su contraseña"
                   required
+                  minlength="8"
+                  maxlength="12"
+                  pattern="[A-Za-z0-9]+"
                 />
               </div>
               <div class="form-group"></div>
-              <div class="d-flex justify-content-center mt-3 registerContainer">
+              <div class="d-flex justify-content-center registerContainer">
                 <button
                   id="loginButton"
                   name="loginButton"
@@ -166,7 +174,7 @@
               <a href="../login/login.html" class="ml-2">Inicia sesión</a>
             </div>
             <div class="d-flex justify-content-center links">
-              <a href="../index.html" class="ml-2" id="backToHome" name="backToHome"> 🡰 VOLVER A INICIO</a>
+              <a href="../index.html" class="ml-2" id="backToHome" name="backToHome">VOLVER A INICIO</a>
             </div>  
           </div>
         </div>

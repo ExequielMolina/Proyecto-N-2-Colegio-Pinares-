@@ -1,14 +1,18 @@
 let registeredUsers;
+if (localStorage.getItem("loggedUser")) {
+  alert("Usted ya se encuentra loguedo en Colegio Pinares");
+  window.location.assign('../index.html');
+  }
 
 function registerUsers() {
-
   if(!localStorage.getItem('registeredUsers')) {
     registeredUsers = [];
-}
-else{
+  }
+  else{
   registeredUsers = localStorage.getItem('registeredUsers');
   registeredUsers = JSON.parse(registeredUsers);
-}
+  }
+  
   let name = document.getElementById('name').value;
   let lastName = document.getElementById('lastName').value;
   let area = document.getElementById('area').value;
@@ -17,77 +21,31 @@ else{
   let userName = document.getElementById('userName').value;
   let password = document.getElementById('password').value;
 
-  if(name !== '' && lastName !== '' && area !== '' && position !== '' && email !== '' && userName !== '' && password !== ''){
-
-    let newUser = new User(name, lastName, position, area, email,userName, password);
-    registeredUsers.push(newUser);
-    localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers))
-  }
-
+  if(name !== '' && lastName !== '' && email !== '' && userName !== '' && password !== '' ) {
+    if(registeredUsers.length === 0){
+      let newUser = new User(name, lastName, position, area, email,userName, password);
+      registeredUsers.push(newUser);
+      localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers))
+      alert("¡Registro exitoso! Ahora puede iniciar sesión")
+    }
+    else{
+      const foundMatchingUserName = registeredUsers.findIndex (user => user.userName === userName)
+      const foundMatchingEmail = registeredUsers.findIndex (user => user.email === email)
+      if(foundMatchingUserName !== -1){
+        alert('El nombre de usuario ya se encuentra registrado.');
+      }
+      else if(foundMatchingEmail !== -1){
+        alert('La dirección de mail ingresada ya se encuentra registrada');
+      }
+           else {
+              let newUser = new User(name, lastName, position, area, email,userName, password);
+              registeredUsers.push(newUser);
+             localStorage.setItem('registeredUsers', JSON.stringify(registeredUsers))
+              alert("¡Registro exitoso! Puede iniciar sesión ")
+           }
+        
+      }
+    }
 }
-/* ---------------------------------------------- */
 
-/* let form = document.getElementById('form');*/
-// const nombre = document.getElementById('name');
-// const apellido = document.getElementById('lastName');
-// const area = document.getElementById('area');
-// const cargo = document.getElementById('position');
-// const email = document.getElementById('email');
-// const nameUser = document.getElementById('userName');
-// const password = document.getElementById('password');
-// const form = document.getElementById('form');
-// const parrafo = document.getElementById('alerta');
 
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   let alerta = '';
-//   let entrar = false;
-//   let expresionName = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
-//   let expresionApellido = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
-//   let expresionCargo = /^[a-zA-ZÀ-ÿ\s]{3,40}$/;
-//   let expresionEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-//   let expresionUsuario = /^[a-zA-Z0-9\_\-]{4,16}$/;
-//   let expresionPass = /^.{4,12}$/;
-//   parrafo.innerHTML = '';
-
-//   if (
-//     nombre.value === '' ||
-//     apellido.value === '' ||
-//     cargo.value === '' ||
-//     area.value === '' ||
-//     email.value === '' ||
-//     nameUser.value === '' ||
-//     password.value === ''
-//   ) {
-//     alerta += ` ¡todos los campos son obligatorios¡<br>  `;
-//     entrar = true;
-//   }
-//   if (!expresionName.test(nombre.value)) {
-//     alerta += ` ¡el nombre no es valido! <br>  `;
-//     entrar = true;
-//   }
-//   if (!expresionApellido.test(apellido.value)) {
-//     alerta += ` ¡el apellido no es valido! <br>  `;
-//     entrar = true;
-//   }
-//   if (!expresionCargo.test(cargo.value)) {
-//     alerta += ` ¡el cargo no es valido! <br>  `;
-//     entrar = true;
-//   }
-
-//   if (!expresionEmail.test(email.value)) {
-//     alerta += ` ¡el email no es valido! <br>  `;
-//   }
-//   if (!expresionUsuario.test(nameUser.value)) {
-//     alerta += ` ¡el nombre de usuario no es valido! <br>  `;
-//   }
-//   if (!expresionPass.test(password.value)) {
-//     alerta += ` ¡la contraseña no es valida! <br>  `;
-//   }
-
-//   if (entrar) {
-//     parrafo.innerHTML = alerta;
-//   } else {
-//     parrafo.innerHTML = 'Registrado';
-//   }
-// });
