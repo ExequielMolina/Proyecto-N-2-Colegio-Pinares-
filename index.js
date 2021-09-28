@@ -12,5 +12,12 @@ class User {
     }
 }
 
-//evaluar si ya existe y ponerla en nuestra lista de la variable local o sino crear
-//una variable de objeto vacio.
+class userQuery {
+    constructor(contactName, contactEmail, contactPhone, textAreaContact){
+        this.contactName = contactName;
+        this.contactEmail = contactEmail;
+        this.contactPhone = contactPhone;
+        this.textAreaContact = textAreaContact;
+    }
+}
+

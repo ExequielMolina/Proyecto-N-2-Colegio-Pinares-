@@ -14,8 +14,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
-
-    
 <body>
     <main>
         <header>
@@ -202,45 +200,41 @@
   <!-- End Card Group Noticias -->
 
 <!-- StartContactForm -->
-<h1> Contacto Colegio Pinares Tucumán </h1>
+<p id="sectionTitle" name="sectionTitle">Contáctenos</p>
 <div class="">
   <form class="form" id="contactForm" name="contactForm">
     <div class=" ms-3 mb-1 mt-3 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
-      <label for="name" class="form-label"></label>
-      <input type="text" class="form-control" id="contactName" minlength="5" maxlength="40" placeholder="Apellidos y Nombres"
-        aria-describedby="name" required>
-      <div id="contactName" class="form-text"></div>
+      <label class="form-label"></label>
+      <input type="text" class="form-control" id="contactName" name="contactName" minlength="5" maxlength="40" placeholder="Apellidos y Nombres" required>
+      <div class="form-text"></div>
     </div>
     <div class="ms-3 mb-1 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
-      <label for="contactEmail" class="form-label"></label>
-      <input type="email" class="form-control" id="contactEmail" minlength="5" maxlength="40" placeholder="Correo Electrónico"
-        aria-describedby="emailHelp" required>
-      <div id="contactEmail" name="name" class="form-text"></div>
+      <label class="form-label"></label>
+      <input type="email" class="form-control" id="contactEmail" name="contactEmail" minlength="5" maxlength="40" placeholder="Correo Electrónico" required>
+      <div class="form-text"></div>
     </div>
     <div class=" ms-3 mb-1 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
-      <label for="contactPhone" class="form-label"></label>
-      <input type="tel" class="form-control" id="contactPhone" minlength="10" maxlength="40" placeholder="Teléfono" name="contactPhone"
-        required>
+      <label class="form-label"></label>
+      <input type="tel" class="form-control" id="contactPhone"  name="contactPhone" minlength="10" maxlength="40" placeholder="Teléfono" required>
     </div>
     <div class=" ms-3 mb-1 me-3 col-sm-12 col-md-6  col-lg-4 col-xl-4 col-xxl-4">
-      <label for="exampleFormControlTextarea1" class="form-label"></label>
-      <textarea class="form-control" id="texAreaContact" name="textAreaContact" minlength="" maxlength="500" required
+      <label class="form-label"></label>
+      <textarea class="form-control" id="textAreaContact" name="textAreaContact" minlength="" maxlength="500" required
         placeholder="Escriba su consulta aquí..." rows="3"></textarea>
     </div>
-    <button class="  mb-3 p-2" type="submit" id="enviarButton" name="enviarButton" data-bs-toggle="modal"
-      data-bs-target="#contactModal">
-      <a style="text-decoration: none;">ENVIAR</a>
+    <button class="  ms-3 mt-1 mb-3" type="submit" id="loginButton" name="loginButton" data-bs-toggle="modal" data-bs-target="#contactModal">
+      <a>ENVIAR</a>
+    </button>
   </form>
 </div>
 <!-- EndContactForm -->
 
-<div class="modal fade rounded-3" id="contactModal" name="contactModal" tabindex="1"
-  aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade rounded-3" id="contactModal" name="contactModal" tabindex="1" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-dark p-2">
         <img src="img/logo-navbar.png" class="image-fluid ms-1" style="width: 25%;">
-        <h5 class="modal-title text-white ms-3" id="exampleModalLabel"></h5>
+        <h6 class="modal-title text-white ms-3"> Colegio Pinaries Tucumán</h6>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="font-weight: 500; font-style: italic; justify-content:left;">
@@ -255,9 +249,6 @@
     </div>
   </div>
 </div>
-
-
-
         </header>    
     </main>
 
@@ -331,7 +322,5 @@
   </footer>
   <!-- End Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
 </body>
-
 </html>

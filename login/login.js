@@ -47,8 +47,4 @@ if (localStorage.getItem("loggedUser")) {
             }
         }
 
-
-
-
-
     }
